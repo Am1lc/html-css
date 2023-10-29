@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media</title>
+</head>
+<body>
+    <h1>Dynamic Images</h1>
+    <p>Try opening this site on several different devices or simply increase and decrease the size of your browser.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/photo-s.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/photo-m.png" type="image/png">
+        <img src="images/photo-l.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Playing Audio</h1>
+    <p>Let's learn how to play HTML audios</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/moonlight.wav" type="audio/wav">
+        <source src="media/moonlight.mp3" type="audio/mpeg">
+        <source src="media/moonlight.ogg" type="audio/ogg">
+    </audio>
+    <p>Unfortunately your browser can't play audio. <a href="media/moonlight.wav" target="_blank" rel="external">Click here to download the WAV file.</a></p>
+</body>
+</html>

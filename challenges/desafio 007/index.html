@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Flexible Images</title>
+</head>
+<body>
+    <h1>Flexible Images</h1>
+    <p>Are you seeing the full picture? Try zooming in to enjoy the best experience&#x1F60A;.</p>
+
+    <picture>
+        <source media="(max-width: 520px)" srcset="images/photo-s.jpg" type="image/jpg">
+        <source media="(max-width: 788px)" srcset="images/photo-m.jpg" type="image/jpg">
+        <img src="images/photo.jpg" alt="flexible image">
+    </picture>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/carneyval-mashup.mp3" type="audio/mpeg">
+        <source src="media/carneyval-mashup.wav" type="audio/wav">
+        <source src="media/carneyval-mashup.ogg" type="audio/ogg">
+    </audio>
+    <p>
+        <a href="media/carneyval-mashup.mp3" target="_blank" rel="external">Click here to download the MP3 file.</a>
+    </p>
+    
+</body>
+</html>
